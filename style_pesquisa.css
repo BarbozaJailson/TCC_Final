@@ -1,0 +1,138 @@
+.flexHome-search {
+  width: 500px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+}
+.box-search {
+  display: flex;
+  width: 500px;
+  height: 40px;
+  border-radius: 20px;
+  flex-direction: row;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 4px 4px 6px;
+}
+.box-search:focus-within {
+  border: rgba(0, 0, 0, 0.5) solid 1px;
+}
+#input-search {
+  width: 460px;
+  height: 40px;
+  border-radius: 20px;
+  font-size: 12px;
+}
+#search {
+  width: 460px;
+  height: 40px;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  padding-left: 10px;
+  font-size: 16px;
+}
+#button-search {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  display: flex;
+  & img {
+    width: 20px;
+    height: 20px;
+    margin: auto;
+  }
+}
+
+/* Dimencionamento para telas de tablets */
+@media (min-width: 481px) and (max-width: 769px) {
+  .flexHome-search {
+    width: 400px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+  }
+  .box-search {
+    display: flex;
+    width: 400px;
+    height: 30px;
+    border-radius: 20px;
+    flex-direction: row;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 4px 4px 6px;
+  }
+  .box-search:focus-within {
+    border: rgba(0, 0, 0, 0.5) solid 1px;
+  }
+  #input-search {
+    width: 370px;
+    height: 30px;
+    border-radius: 20px;
+  }
+  #search {
+    width: 370px;
+    height: 30px;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    padding-left: 10px;
+    font-size: 12px;
+  }
+  #button-search {
+    width: 30px;
+    height: 30px;
+    border-radius: 20px;
+    display: flex;
+    & img {
+      width: 20px;
+      height: 20px;
+      margin: auto;
+    }
+  }
+}
+
+/* Dimencionamento para telas de celulares */
+@media (max-width: 480px) {
+  .flexHome-search {
+    width: 100vw;
+    height: 60px;
+    display: flex;
+    align-items: center;
+  }
+  .box-search {
+    display: flex;
+    width: 300px;
+    height: 30px;
+    border-radius: 20px;
+    flex-direction: row;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 4px 4px 6px;
+  }
+  .box-search:focus-within {
+    border: rgba(0, 0, 0, 0.5) solid 1px;
+  }
+  #input-search {
+    width: 270px;
+    height: 30px;
+    border-radius: 20px;
+  }
+  #search {
+    width: 270px;
+    height: 30px;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    padding-left: 10px;
+    font-size: 12px;
+  }
+  #button-search {
+    width: 30px;
+    height: 30px;
+    border-radius: 20px;
+    display: flex;
+    & img {
+      width: 20px;
+      height: 20px;
+      margin: auto;
+    }
+  }
+}

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style_header.css">
+    <link rel="stylesheet" href="style_pesquisa.css">
+    <link rel="stylesheet" href="style_inputs.css">
+    <link rel="stylesheet" href="style_fontes.css">
+    <link rel="stylesheet" href="style_imagens.css">
+    <title>Cadastro de Parceiros</title>
+  </head>
+  <body>
+    <div class="full-screen">
+<!-- ---Cabeçalho--------------------------------------------------------------------------------------------------------------- -->  
+        <header>
+        <div id="boxout-logo">
+          <div id="boxin-logo">
+            <p id="txtlogo">Gera<Span>Ação</Span></p>
+          </div>
+        </div>
+<!-- ---Botões de navegação--------------------------------------------------------------------------------------------------------------- -->  
+        <div id="nav">
+            <ul>
+                <li><a class="nav-link" href="home.html">HOME</a></li>
+                <li>|</li>
+                <li><a class="nav-link" style="background-color: rgba(255, 255, 255, 0.7);color: rgba(0, 0, 0, 0.7);font-weight:bold;" href="parceiros.html">PARCEIROS</a></li>
+                <li>|</li>
+                <li><a class="nav-link" href="doadores.html">DOADORES</a></li>
+                <li>|</li>
+                <li><a class="nav-link" href="cadastros.html">USUARIOS</a></li>
+                <li>|</li>
+                <li><a class="nav-link" href="contatos.html">CONTATOS</a></li>
+              </ul>
+        </div>
+      </header>
+      <main>
+        <div class="box-content">
+          <h1 id="titulo-cadParceiro">Cadastro de Parceiros</h1>
+<!-- -----Caixa de cadastro------------------------------------------------------------------------------------------------------------- -->  
+          <fieldset class="field_cadParceiro">
+            <legend class="legend">Cadastro</legend>
+            <div class="box1-cadParceiro">
+                <div class="box-cnpj_nome_cadParceiro">
+                    <div class="box-cnpj_cadParceiro">
+                        <p class="p-label">CNPJ:</p>
+                        <input type="text" name="cnpj_cadParceiro" id="cnpj_cadParceiro" class="inp_cnpj" placeholder=" 00.000.000/0000-00">
+                    </div>
+                    <div class="nome_cadParceiro">
+                        <p class="p-label">Nome da Instituição:</p>
+                        <input type="text" name="nome_cadParceiro" id="nome_cadParceiro" class="inp_nome">
+                    </div>    
+                </div>
+                <div class="box-img_cadParceiro">
+                    <p class="p-label">Imagem:</p>
+                    <div class="img_into_cadParceiro">
+                    <p class="p-label">Add imagem</p>
+                    </div>
+                </div>
+            </div>
+<!-- -----Caixa de endereço------------------------------------------------------------------------------------------------------------- -->  
+            <fieldset>
+                <legend class="legend">Endereço</legend>
+<!-- -----Sub Caixa de cadastro------------------------------------------------------------------------------------------------------------- -->  
+                <div class="box-cep_tipo_cadParceiro">
+                    <div class="cep_cadParceiro">
+                        <p class="p-label">Cep:</p>
+                        <input type="text" name="cep_cadParceiro" id="cep_cadParceiro" class="inp_cep" placeholder="00000-000">
+                    </div>
+                    <div class="tipo_cadParceiro">
+                        <p class="p-label">Tipo logradouro:</p>
+                        <select name="tipoLogradouro_cadParceiro" id="tipoLogradouro_cadParceiro" class="inp_tipoLogradouro">
+                            <option value="rua">Rua</option>
+                            <option value="avenida">Avenida</option>
+                            <option value="rodovia">Rodovia</option>
+                            <option value="estrada">Estrada</option>
+                            <option value="viela">Viela</option>
+                            <option value="alameda">Alameda</option>
+                            <option value="quadra">Quadra</option>
+                        </select>
+                    </div>
+                </div>
+<!-- -----Sub Caixa de cadastro------------------------------------------------------------------------------------------------------------- -->  
+                <div class="box-logradouro_numero_cadParceiro">
+                    <div class="logradouro_cadParceiro">
+                        <p class="p-label">Logradouro:</p>
+                        <input type="text" name="logradouro_cadParceiro" id="logradouro_cadParceiro" class="inp_logradouro">
+                    </div>
+                    <div class="numero_cadParceiro">
+                        <p class="p-label">Numero:</p>
+                        <input type="text" name="numero_cadParceiro" id="numero_cadParceiro" class="inp_numero" placeholder="Ex: 461">
+                    </div>
+                </div>
+<!-- -----Sub Caixa de cadastro------------------------------------------------------------------------------------------------------------- -->  
+                <div class="box-bairro_cidade_uf_cadParceiro">
+                    <div class="bairro_cadParceiro">
+                        <p class="p-label">Bairro:</p>
+                        <input type="text" name="bairro_cadParceiro" id="bairro_cadParceiro" class="inp_bairro" placeholder="Ex: Pq Imperial">
+                    </div>
+                    <div class="cidade_cadParceiro">
+                        <p class="p-label">Cidade:</p>
+                        <input type="text" name="cidade_cadParceiro" id="cidade_cadParceiro" class="inp_cidade" placeholder="Ex Barueri">
+                    </div>
+                    <div class="uf_cadParceiro">
+                        <p class="p-label">UF:</p>
+                        <input type="text" name="uf_cadParceiro" id="uf_cadParceiro" class="inp_uf" placeholder="Ex: SP">
+                    </div>
+                </div>
+            </fieldset>
+<!-- -----Sub Caixa de cadastro------------------------------------------------------------------------------------------------------------- -->  
+            <div class="box2-cadParceiro">
+                <div class="email_cadParceiro">
+                    <p class="p-label">E-Mail</p>
+                    <input type="email" name="email_cadParceiro" id="email_cadParceiro" class="inp_email" placeholder="google@gmail.com">
+                </div>
+                <div class="celular_cadParceiro">
+                    <p>Celular:</p>
+                    <input type="text" name="celular_cadParceiro" id="celular_cadParceiro" class="inp_celular" placeholder="(99) 99999-9999">
+                </div>
+            </div>
+<!-- -----Sub Caixa de cadastro------------------------------------------------------------------------------------------------------------- -->  
+            <div class="box3-cadParceiro">
+                <div class="data_cadParceiro">
+                    <p class="p-label">Data de cadastro:</p>
+                    <input type="date" name="data_cadDoacoes" id="data_cadDoacoes" class="inp_data">
+                </div>
+<!-- -----Botão salvar------------------------------------------------------------------------------------------------------------- -->  
+                <div>
+                    <input type="submit" name="btn_enviar" id="btn_enviar" class="btn_cadDoacoes" value="Enviar">
+                </div>
+<!-- -----Botão excluir------------------------------------------------------------------------------------------------------------- -->  
+                <div>
+                   <input type="submit" name="btn_exclir" id="btn_excluir" class="btn_cadDoacoes" value="Excluir">
+                </div>
+            </div>
+        </fieldset>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

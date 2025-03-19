@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style_header.css">
+    <link rel="stylesheet" href="style_pesquisa.css">
+    <link rel="stylesheet" href="style_inputs.css">
+    <link rel="stylesheet" href="style_fontes.css">
+    <link rel="stylesheet" href="style_imagens.css">
+    <title>Cadastrar usuario</title>
+  </head>
+  <body>
+    <div class="full-screen">
+<!-- -Cabeçalho----------------------------------------------------------------------------------------------------------------- -->  
+      <header>
+        <div id="boxout-logo">
+          <div id="boxin-logo">
+            <p id="txtlogo">Gera<Span>Ação</Span></p>
+          </div>
+        </div>
+<!-- ---Botões de navegação--------------------------------------------------------------------------------------------------------------- -->  
+        <div id="nav">
+          <ul>
+            <li><a class="nav-link" href="home.html">HOME</a></li>
+            <li>|</li>
+            <li><a class="nav-link" href="parceiros.html">PARCEIROS</a></li>
+            <li>|</li>
+            <li><a class="nav-link" href="doadores.html">DOADORES</a></li>
+            <li>|</li>
+            <li><a class="nav-link" style="background-color: rgba(255, 255, 255, 0.7);color: rgba(0, 0, 0, 0.7);font-weight:bold;"  href="cadastros.html">USUARIOS</a></li>
+            <li>|</li>
+            <li><a class="nav-link" href="contatos.html">CONTATOS</a></li>
+          </ul>
+        </div>
+      </header>
+      <main class="login-cadastro">
+        <div class="login_e_cadastro">
+<!-- -----Caixa de cadastro------------------------------------------------------------------------------------------------------------- -->  
+          <fieldset id="box-cadastro"><br>
+            <legend class="legend">Cadastro de Usuario</legend>
+            <form action="" method="post" id="acao">
+              <input type="radio" id="nome" name="nomeSelecao" value="nome">
+              <label for="nome">Nome</label>
+              <input type="radio" id="instituicao" name="nomeSelecao" value="instituicao">
+              <label for="instituicao">Instituição</label>
+              <input type="text" id="nome" class="inputBase" name="nome" placeholder="Nome..." required /><br>
+              <input type="radio" id="cpf" name="selecao" value="cpf">
+              <label for="cpf">CPF</label>
+              <input type="radio" id="cnpj" name="selecao" value="cnpj">
+              <label for="cnpj">CNPJ</label>
+              <input type="" id="identificacao" class="inputBase" name="identificacao" placeholder="Identificação..." required />
+              <p>Setor</p>
+              <input type="text" id="setor" class="inputBase" name="setor" placeholder="setor..." required/>
+              <p>Nivel de acesso</p>
+              <select name="acesso" id="acesso" class="inputBase">
+                <option value="Junior">Junior</option>
+                <option value="Pleno">Pleno</option>
+                <option value="Senior">Senior</option>
+              </select>
+              <p>Senha</p>
+              <input type="password" id="senha" class="inputBase" name="senha" placeholder="Senha..." required />
+              <input id="button" class="inputBase" type="button" value="Salvar" />
+            </form>
+        </fieldset>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

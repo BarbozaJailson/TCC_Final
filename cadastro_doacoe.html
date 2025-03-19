@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style_header.css">
+    <link rel="stylesheet" href="style_pesquisa.css">
+    <link rel="stylesheet" href="style_inputs.css">
+    <link rel="stylesheet" href="style_fontes.css">
+    <link rel="stylesheet" href="style_imagens.css">
+    <title>Cadastro de doações</title>
+  </head>
+  <body>
+    <div class="full-screen">
+<!-- -Cabeçalho----------------------------------------------------------------------------------------------------------------- -->  
+      <header>
+        <div id="boxout-logo">
+          <div id="boxin-logo">
+            <p id="txtlogo">Gera<Span>Ação</Span></p>
+          </div>
+        </div>
+<!-- ---Botões de navegação--------------------------------------------------------------------------------------------------------------- -->  
+        <div id="nav">
+          <ul>
+            <li><a class="nav-link" href="doacoes_parceiro.html">HOME</a></li>
+            <li>|</li>
+            <li><a class="nav-link" style="background-color: rgba(255, 255, 255, 0.7);color: rgba(0, 0, 0, 0.7);font-weight:bold;" href="cadastro_doacoe.html">CADASTRO</a></li>            
+          </ul> 
+        </div>
+      </header>
+<!-- -Box principal de conteudo----------------------------------------------------------------------------------------------------------------- -->  
+      <main>
+        <div class="box-content">
+          <h1 id="titulo-cadDoacoes">Cadastro de doações</h1>
+<!-- -----caixa de cadastro------------------------------------------------------------------------------------------------------------- -->  
+          <fieldset class="field_cadDoacoes">
+          <legend class="legend">Cadastro</legend>
+<!-- -----Sub caixa de cadastro------------------------------------------------------------------------------------------------------------- -->  
+          <div class="box1-cadDoacoes">
+            <div class="cnpj_cadDoacoes">
+                <p class="p-label">CNPJ Instituição:</p>
+                <input type="text" name="cnpj_cadDoacoes" id="cnpj_cadDoacoes" class="inp_cnpj" placeholder=" 00.000.000/0000-00">
+            </div>
+            <div class="status_cadDoacoes">
+              <p class="p-label">Status da doação:</p>
+              <select name="statu_cadDoacoes" id="statu_cadDoacoes" class="inp_status">
+                  <option value="nenhum">Nenhum</option>
+                  <option value="em_analise">Em analise</option>
+                  <option value="finalizado">Finalizado</option>
+                  <option value="cancelado">Cancelado</option>
+              </select>
+            </div>
+         </div>
+<!-- -----Sub caixa de cadastro------------------------------------------------------------------------------------------------------------- -->  
+         <div class="box2-cadDoacoes">
+            <p class="p-label">Instituição:</p>
+            <input type="text" name="instit_cadDoacoes" id="instit_cadDoacoes" class="inp_intituicao" placeholder="ex. Igrea Nossa Senhora de Fatima">
+         </div>
+<!-- -----Sub caixa de cadastro------------------------------------------------------------------------------------------------------------- -->  
+         <div class="box3-cadDoacoes">
+              <div class="box-img_cadDoacoes">
+                <p class="p-label">Adicionar imagem:</p>
+                <div class="box-img_into_cadDoacoes">
+                  <p class="p-label">Add imagem</p>
+                </div>
+              </div>
+              <div class="box-conjun_desc_sex_tam">
+                  <div class="box-desc_cadDoacoes">
+                    <p class="p-label">Descrição:</p>
+                    <textarea name="desc_cadDoacoes" id="desc_cadDoacoes" class="desc_area_cadDoacoes"></textarea>
+                  </div>
+                  <div class="box-sex_quant_tam">
+                      <div class="box-sexo_cadDoacoes">
+                          <p class="p-label">Sexo:</p>
+                          <select name="sex_cadDoacoes" id="sex_cadDoacoes" class="inp_sexo">
+                              <option value="nao_informar">Não informar</option>
+                              <option value="masculino">Masculino</option>
+                              <option value="feminino">Feminino</option>
+                          </select>
+                      </div>
+                      <div class="box-quant_cadDoacoes">
+                          <p class="p-label">Quantidade:</p>
+                          <input type="number" name="quant_cadDoacoes" id="quant_cadDoacoes" class="inp_quantidade" placeholder=" ex: 5">
+                      </div>
+                      <div class="box-tam_cadDoacoes">
+                          <p class="p-label">Tamanho:</p>
+                          <input type="text" name="tam_cadDoacoes" id="tam_cadDoacoes" class="inp_tamanho" placeholder="Rolpa, Calçado...">
+                      </div>
+                  </div>
+              </div>
+         </div>
+         <div class="box4-cadDoacoes">
+              <div>
+                  <p class="p-label">Data de cadastro:</p>
+                  <input type="date" name="data_cadDoacoes" id="data_cadDoacoes" class="inp_data">
+              </div>
+              <div>
+                  <input type="submit" name="btn_enviar" id="btn_enviar" class="btn_cadDoacoes" value="Enviar">
+              </div>
+              <div>
+                 <input type="submit" name="btn_exclir" id="btn_excluir" class="btn_cadDoacoes" value="Excluir">
+              </div>
+         </div>
+        </fieldset>
+       
+
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

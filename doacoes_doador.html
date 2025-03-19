@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style_header.css" />
+    <link rel="stylesheet" href="style_pesquisa.css" />
+    <link rel="stylesheet" href="style_inputs.css" />
+    <link rel="stylesheet" href="style_fontes.css">
+    <link rel="stylesheet" href="style_imagens.css">
+    <title>Lista de doadores</title>
+  </head>
+  <body>
+    <div class="full-screen">
+<!-- -Cabeçalho------------------------------------------------------------------------------------------------------------------ -->
+      <header>
+        <div id="boxout-logo">
+          <div id="boxin-logo">
+            <p id="txtlogo">Gera<Span>Ação</Span></p>
+          </div>
+        </div>
+<!-- ---Botões de navegação---------------------------------------------------------------------------------------------------------------- -->
+        <div id="nav">
+          <ul>
+            <li><a class="nav-link" href="home.html">HOME</a></li>
+            <li>|</li>
+            <li><a class="nav-link" href="parceiros.html">PARCEIROS</a></li>
+            <li>|</li>
+            <li><a class="nav-link" style="background-color: rgba(255, 255, 255, 0.7);color: rgba(0, 0, 0, 0.7);font-weight:bold;" href="doadores.html">DOADORES</a></li>
+            <li>|</li>
+            <li><a class="nav-link" href="cadastros.html">USUARIOS</a></li>
+            <li>|</li>
+            <li><a class="nav-link" href="contatos.html">CONTATOS</a></li>
+          </ul>
+        </div>
+      </header>
+      <div class="box-fullContent">
+        <div class="box-content">
+<!-- -----Search-------------------------------------------------------------------------------------------------------------- -->
+          <div class="flexHome-search">
+            <div class="box-search">
+              <div id="input-search">
+                <input type="text" id="search" class="search" name="search" placeholder="pesquisar..." />
+              </div>
+              <div id="button-search">
+                <img src="imagens/search.png" alt="imagem search" />
+              </div>
+            </div>
+          </div>
+<!-- -----caixa de doador e parceiro-------------------------------------------------------------------------------------------------------------- -->
+          <div class="box-doador_parceiro">
+            <div class="box-img-nome-doador_parceiro">
+              <div id="box-imagem-doador_parceiro">
+                <img id="img-doador_parceiro" src="imagens/doador/avatar.jpg" alt="">
+              </div>
+              <div id="box-info1-doador_parceiro">
+                <p id="nome-doador"> Ronaldo Fenomeno</p>
+                <p id="sexo-doador">Sexo: Masculino</p>
+              </div>
+            </div>
+            <div id="box-info2-doador_parceiro">
+              <p id="data-doador">doador desde: 15/05/2024</p>
+              <p id="endereco-doador">Endereço: Rua Castelo branco, 55 - Barueri / SP</p>
+            </div>
+          </div>
+<!-- ------------------------------------------------------------------------------------------------------------------- -->
+          <div class="flexHome-parceiro">
+            <h1 class="title-doadores">Doadores</h1>
+          </div>
+          <div class="flexHome-main">
+            <main class="box-main">
+<!-- ------Caixa de doador------------------------------------------------------------------------------------------------------------- -->
+                <div class="box-doador">
+                  <div class="box-img-nome-doador">
+                    <div id="box-imagem-doador">
+                      <img id="img-doador" src="imagens/doacoes/calça masculina.jpg" alt="">
+                    </div>
+                    <div id="box-info1-doador">
+                      <p id="nome-doador"> Calça jeans </p>
+                      <p id="sexo-doador">Tamanho: 38</p>
+                    </div>
+                  </div>
+                  <div id="box-info2-doador">
+                    <div class="box-statu_data_doacoes">
+                      <div class="box-status_doacoes">
+                        <select name="statu_cadDoacoes" id="statu_cadDoacoes" class="inp_status">
+                          <option value="status">Status</option>
+                          <option value="em_analise">Em analise</option>
+                          <option value="finalizado">Finalizado</option>
+                          <option value="cancelado">Cancelado</option>
+                        </select>
+                      </div>
+                      <div class="box-data_doacoes">
+                        <p id="data-doador">Quantidade: 15</p>
+                      </div>
+                    </div>
+                    <div class="box-end_doador_parceiro">
+                      <p id="endereco-doador">Endereço: Rua Castelo branco, 55 - Barueri / SP</p>
+                    </div>  
+                  </div>
+                </div>
+<!-- ------Caixa de doador------------------------------------------------------------------------------------------------------------- -->
+                <div class="box-doador">
+                  <div class="box-img-nome-doador">
+                    <div id="box-imagem-doador">
+                      <img id="img-doador" src="imagens/doacoes/camisa masculina.jpg" alt="">
+                    </div>
+                    <div id="box-info1-doador">
+                      <p id="nome-doador"> Camiseta masculino </p>
+                      <p id="sexo-doador">Tamanho: M</p>
+                    </div>
+                  </div>
+                  <div id="box-info2-doador">
+                    <div class="box-statu_data_doacoes">
+                      <div class="box-status_doacoes">
+                        <select name="statu_cadDoacoes" id="statu_cadDoacoes" class="inp_status">
+                          <option value="status">Status</option>
+                          <option value="em_analise">Em analise</option>
+                          <option value="finalizado">Finalizado</option>
+                          <option value="cancelado">Cancelado</option>
+                        </select>
+                      </div>
+                      <div class="box-data_doacoes">
+                        <p id="data-doador">Quantidade: 15</p>
+                      </div>
+                    </div>
+                    <div class="box-end_doador_parceiro">
+                      <p id="endereco-doador">Endereço: Rua Castelo branco, 55 - Barueri / SP</p>
+                    </div>  
+                  </div>
+                </div>
+<!-- ------Caixa de doador------------------------------------------------------------------------------------------------------------- -->
+                <div class="box-doador">
+                  <div class="box-img-nome-doador">
+                    <div id="box-imagem-doador">
+                      <img id="img-doador" src="imagens/doacoes/edredon solteiro.jpg" alt="">
+                    </div>
+                    <div id="box-info1-doador">
+                      <p id="nome-doador"> Edredom </p>
+                      <p id="sexo-doador">Tamanho: Solteiro</p>
+                    </div>
+                  </div>
+                  <div id="box-info2-doador">
+                    <div class="box-statu_data_doacoes">
+                      <div class="box-status_doacoes">
+                        <select name="statu_cadDoacoes" id="statu_cadDoacoes" class="inp_status">
+                          <option value="status">Status</option>
+                          <option value="em_analise">Em analise</option>
+                          <option value="finalizado">Finalizado</option>
+                          <option value="cancelado">Cancelado</option>
+                        </select>
+                      </div>
+                      <div class="box-data_doacoes">
+                        <p id="data-doador">Quantidade: 15</p>
+                      </div>
+                    </div>
+                    <div class="box-end_doador_parceiro">
+                      <p id="endereco-doador">Endereço: Rua Castelo branco, 55 - Barueri / SP</p>
+                    </div>  
+                  </div>
+                </div>
+<!-- ------Caixa de doador------------------------------------------------------------------------------------------------------------- -->
+                <div class="box-doador">
+                  <div class="box-img-nome-doador">
+                    <div id="box-imagem-doador">
+                      <img id="img-doador" src="imagens/doacoes/edredon.jpg" alt="">
+                    </div>
+                    <div id="box-info1-doador">
+                      <p id="nome-doador"> Edredom </p>
+                      <p id="sexo-doador">Tamanho: Casal</p>
+                    </div>
+                  </div>
+                  <div id="box-info2-doador">
+                    <div class="box-statu_data_doacoes">
+                      <div class="box-status_doacoes">
+                        <select name="statu_cadDoacoes" id="statu_cadDoacoes" class="inp_status">
+                          <option value="status">Status</option>
+                          <option value="em_analise">Em analise</option>
+                          <option value="finalizado">Finalizado</option>
+                          <option value="cancelado">Cancelado</option>
+                        </select>
+                      </div>
+                      <div class="box-data_doacoes">
+                        <p id="data-doador">Quantidade: 15</p>
+                      </div>
+                    </div>
+                    <div class="box-end_doador_parceiro">
+                      <p id="endereco-doador">Endereço: Rua Castelo branco, 55 - Barueri / SP</p>
+                    </div>  
+                  </div>
+                </div>
+<!-- ------------------------------------------------------------------------------------------------------------------- -->
+            </main>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <p>&copy;Jailson Barboza</p>
+      </footer>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,241 @@
+/* input logim e cadastro*/
+.inputBase {
+  width: 300px;
+  height: 35px;
+  border: none;
+  border-radius: 6px;
+  box-shadow: 4px 4px 6px;
+  margin-bottom: 20px;
+  outline: none;
+  text-indent: 10px;
+}
+.inputBase:focus {
+  outline: solid 2px #48e5c2;}
+#button {
+  color: #3c3c3c;
+  background-color: #48e5c2;
+  margin-top: 5px;
+  height: 35px;
+  font-size: 1.2em;
+}
+#button:hover {
+  background-color: #6effe0;
+  color: black;
+}
+#btncadastro {
+  font-size: 15px;
+  width: 80px;
+  background-color: #48e5c2;
+  color: #3c3c3c;
+  margin: 0;
+  padding: 4px;
+  text-align: center;
+  box-shadow: 3px 3px 8px;
+  text-decoration: none;
+  border-radius: 8px;
+}
+#btncadastro:hover {
+  background-color: #6effe0;
+  color: black;
+}
+/* legenda do Fieldset  */
+.legend {
+  font-size: 18px;
+  font-weight: bold;
+}
+/* Fieldset */
+#box-login {
+  height: 380px;
+  width: 350px;
+  border-radius: 10px;
+  padding-left: 50px;
+  font-size: 14px;
+}
+#box-login:hover {
+  & .legend {
+    color: #48e5c2;
+  }
+}
+
+/* pagina cadastro de doações */
+.inp_cnpj {
+  width: 200px;
+  height: 35px;
+  border-radius: 7px;
+  font-size: 14px;
+  padding-left: 8px;
+  outline: none;
+  border: none;
+  box-shadow: 5px 6px 8px;
+}
+/* cadastro de doações */
+.inp_status,
+.inp_sexo,
+.inp_quantidade,
+.inp_tamanho,
+.inp_data,
+.btn_cadDoacoes,
+/* cadastro de parceiros */
+.inp_cep,
+.inp_tipoLogradouro,
+.inp_bairro,
+.inp_cidade,
+.inp_celular {
+  width: 150px;
+  height: 35px;
+  border-radius: 7px;
+  font-size: 14px;
+  padding-left: 8px;
+  border: none;
+  outline: none;
+  box-shadow: 5px 6px 8px;
+}
+.inp_intituicao {
+  width: 500px;
+  height: 35px;
+  border-radius: 7px;
+  font-size: 16px;
+  padding-left: 8px;
+  outline: none;
+  border: none;
+  box-shadow: 5px 6px 8px;
+}
+.btn_cadDoacoes {
+  background-color: #48e5c2;
+}
+.desc_area_cadDoacoes:hover,
+.inp_cnpj:hover,
+.inp_intituicao:hover,
+.inp_status:hover,
+.inp_sexo:hover,
+.inp_tamanho:hover,
+.inp_data:hover,
+.inp_quantidade:hover {
+  outline: solid 2px #48e5c2;
+}
+.desc_area_cadDoacoes {
+  width: 580px;
+  height: 130px;
+  padding: 5px 10px;
+  font-size: 1.1rem;
+  outline: none;
+  border: none;
+  box-shadow: 5px 6px 8px;
+}
+
+/* pagina cadastro de parceiros */
+.inp_logradouro,
+.inp_nome {
+  width: 600px;
+  height: 35px;
+  border-radius: 7px;
+  font-size: 14px;
+  padding-left: 8px;
+  border: none;
+  outline: none;
+  box-shadow: 5px 6px 8px;
+}
+.inp_uf,
+.inp_numero {
+  width: 70px;
+  height: 35px;
+  border-radius: 7px;
+  font-size: 14px;
+  padding-left: 8px;
+  border: none;
+  outline: none;
+  box-shadow: 5px 6px 8px;
+}
+.inp_email {
+  width: 370px;
+  height: 35px;
+  border-radius: 7px;
+  font-size: 14px;
+  padding-left: 8px;
+  border: none;
+  outline: none;
+  box-shadow: 5px 6px 8px;
+}
+
+@media (max-width: 980px) {
+  .desc_area_cadDoacoes {
+    width: 510px;
+    height: 130px;
+  }
+  .inp_logradouro,
+  .inp_nome {
+    width: 500px;
+    height: 35px;
+  }
+}
+
+/* Dimencionamento para telas de tablets */
+@media (min-width: 481px) and (max-width: 769px) {
+  .inp_cnpj {
+    width: 160px;
+    height: 30px;
+  }
+  .inp_status,
+  .inp_sexo,
+  .inp_quantidade,
+  .inp_tamanho,
+  .inp_data,
+  .btn_cadDoacoes {
+    width: 110px;
+    height: 30px;
+  }
+  .inp_intituicao {
+    width: 350px;
+    height: 30px;
+  }
+  .btn_cadDoacoes {
+    background-color: #48e5c2;
+  }
+  .desc_area_cadDoacoes {
+    width: 340px;
+    height: 80px;
+    padding: 3px 7px;
+    font-size: 1rem;
+  }
+
+  /* pagina cadastro de parceiros */
+  .inp_logradouro,
+  .inp_nome {
+    width: 370px;
+    height: 30px;
+  }
+  .inp_uf,
+  .inp_numero,
+  .inp_cep,
+  .inp_tipoLogradouro,
+  .inp_bairro,
+  .inp_cidade,
+  .inp_celular {
+    height: 30px;
+  }
+  .inp_email {
+    width: 300px;
+    height: 30px;
+  }
+}
+/* Dimencionamento para telas de celulares */
+@media (max-width: 480px) {
+  .inp_status,
+.inp_sexo,
+.inp_quantidade,
+.inp_tamanho,
+.inp_data,
+.btn_cadDoacoes,
+/* cadastro de parceiros */
+.inp_cep,
+.inp_tipoLogradouro,
+.inp_bairro,
+.inp_cidade,
+.inp_celular {
+    width: 70px;
+    height: 20px;
+  }
+  .inp_status {
+    font-size: 8px;
+  }
+}
